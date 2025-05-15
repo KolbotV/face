@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     line-height: 1.6;
     overflow-x: hidden;
 }
@@ -76,7 +76,7 @@ section {
 }
 
 .funding {
-    background-color: #000000;
+    background-color: #202020;
     color: white;
     text-align: center;
 }
@@ -100,6 +100,88 @@ img {
     max-width: 100%;
     height: auto;
     display: block;
+}
+
+.faculty-contributors,
+.student-contributors {
+    padding: 4rem 0;
+}
+
+.faculty-contributors {
+    background-color: #E6E6FA;
+}
+
+.student-contributors {
+    background-color: #572392;
+    color: white;
+}
+
+.contributors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    width: 100%;
+}
+
+.contributor-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.student-contributors .contributor-card {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.contributor-card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto 1.5rem;
+    object-fit: cover;
+}
+
+.contributor-card h3 {
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+}
+
+.contributor-card .role {
+    color: #666;
+    margin: 0.5rem 0;
+    font-style: italic;
+}
+
+.contributor-card .institution {
+    color: #333;
+    font-weight: bold;
+}
+
+.student-contributors .contributor-card .role,
+.student-contributors .contributor-card .institution {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.contributor-card .email a {
+    color: #572392;
+    text-decoration: none;
+}
+
+.contributor-card .email a:hover {
+    text-decoration: underline;
+}
+
+.student-contributors .contributor-card .email a {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .contributors-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Responsive styles */
