@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Navigation */
+.main-nav {
+    background-color: #333;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+.main-nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main-nav a:hover {
+    color: #ddd;
+}
+
+/* Section styles */
+section {
+    width: 100%;
+    padding: 4rem 0;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+/* Column styles */
+.column-40 {
+    flex: 0 0 40%;
+}
+
+.column-50 {
+    flex: 0 0 50%;
+}
+
+.column-60 {
+    flex: 0 0 60%;
+}
+
+/* Section specific styles */
+.hero {
+    background-color: #E6E6FA;
+}
+
+.about {
+    background-color: #572392;
+    color: white;
+}
+
+.about h2, .about p {
+    color: white;
+}
+
+.funding {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+}
+
+.funding .container {
+    flex-direction: column;
+}
+
+.funding h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    color: #cccccc;
+    font-size: 1.2rem;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .main-nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+    
+    .column-40,
+    .column-50,
+    .column-60 {
+        flex: 0 0 100%;
+    }
+}
