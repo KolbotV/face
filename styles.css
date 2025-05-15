@@ -178,6 +178,12 @@ img {
     color: white;
 }
 
+.linkStyle {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 @media (max-width: 768px) {
     .contributors-grid {
         grid-template-columns: 1fr;
